@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://yestrades.co.uk/sitemap.xml

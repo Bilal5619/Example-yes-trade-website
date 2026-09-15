@@ -1,0 +1,69 @@
+/* Mobile-first ordering refinements for the Yes Trades booking journey */
+@media (max-width: 600px) {
+  html { scroll-padding-top: 66px; }
+  body { padding-bottom: 78px; }
+  .wrap { width: min(100% - 24px, 720px); }
+  .nav { height: 62px; }
+  .logo { width: 142px; }
+  .menu-btn { min-width: 46px; min-height: 46px; padding: 6px 10px; }
+
+  .breadcrumbs { padding: 10px 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .page-hero-grid { display: flex; flex-direction: column; gap: 14px; padding: 12px 0 24px; }
+  .page-hero-grid > div:first-child { order: 1; }
+  .page-hero-grid .hero-media { order: 2; }
+  .page-hero h1 { font-size: 32px; line-height: 1.07; margin: 8px 0 10px; }
+  .page-hero .lead { font-size: 16px; line-height: 1.45; margin: 0; }
+  .page-hero .hero-media { width: 100%; height: 205px; border-radius: 16px; }
+  .page-hero .rating { padding: 8px 11px; right: 10px; bottom: 10px; font-size: 12px; }
+  .page-hero .hero-actions { margin: 16px 0 13px; }
+  .page-hero .hero-actions .outline { display: none; }
+  .page-hero .trust-row { gap: 8px 14px; font-size: 12px; }
+  .page-hero .trust-row span:before { width: 19px; height: 19px; margin-right: 5px; }
+
+  .inline-booking { padding: 22px 0 28px; scroll-margin-top: 62px; }
+  .inline-intro { margin-bottom: 14px; }
+  .inline-intro .eyebrow { font-size: 12px; }
+  .inline-intro h2 { font-size: 25px; margin: 4px 0 6px; }
+  .inline-intro p { font-size: 14px; line-height: 1.45; }
+  .inline-step { width: 100%; justify-content: center; margin-top: 11px; padding: 7px 10px; }
+  .inline-booking .easy-grid { display: block; }
+  .inline-booking .easy-form { padding: 15px; border-radius: 15px; }
+  .inline-booking .easy-summary { display: none; }
+  .inline-price-note { margin-bottom: 13px; padding: 10px; font-size: 13px; }
+  .inline-booking .easy-block { padding-bottom: 15px; margin-bottom: 15px; }
+  .inline-booking .easy-block h3 { font-size: 18px; }
+  .inline-booking .easy-block > p { margin-bottom: 11px; font-size: 14px; }
+  .inline-booking .easy-options { grid-template-columns: 1fr 1fr; gap: 8px; }
+  .easy-option label { min-height: 52px; padding: 8px 6px; border-radius: 10px; font-size: 14px; line-height: 1.25; }
+  .compact-grid { gap: 10px; }
+  .easy-field { gap: 5px; }
+  .easy-field input, .easy-field select, .easy-field textarea { min-height: 56px; font-size: 16px; }
+  .inline-booking .easy-form > .btn { min-height: 58px; font-size: 16px; position: relative; }
+
+  .sticky-mobile { grid-template-columns: auto 1fr; gap: 7px; padding: 9px 10px calc(9px + env(safe-area-inset-bottom)); z-index: 80; }
+  .sticky-mobile .btn { min-height: 54px; padding: 0 15px; }
+  .sticky-mobile .btn.dark { width: 54px; min-width: 54px; padding: 0; font-size: 0; }
+  .sticky-mobile .btn.dark:after { content: 'Phone'; font-size: 22px; }
+  .sticky-mobile .mobile-book-cta { font-size: 15px; }
+
+  .cart-overlay { align-items: flex-end; }
+  .cart-drawer { width: 100%; height: min(92dvh, 820px); border-radius: 22px 22px 0 0; padding: 15px 12px calc(22px + env(safe-area-inset-bottom)); }
+  .cart-top { position: sticky; top: -15px; z-index: 2; background: #f7f9f7; padding: 8px 2px 10px; }
+  .cart-top h2 { font-size: 22px; margin: 0; }
+  .cart-card { padding: 14px; margin-top: 10px; border-radius: 14px; }
+  .cart-card .order-service img { width: 68px; height: 58px; }
+  .cart-form { gap: 9px; }
+  .cart-pay { padding: 13px; margin-top: 14px; }
+  .cart-total { margin: 14px 0; }
+  #easy-checkout > .btn { min-height: 58px; font-size: 16px; }
+
+  .section { padding: 38px 0; }
+  .section-title h2 { font-size: 28px; }
+  .benefit { padding: 18px; }
+  .cta, .footer { padding-top: 36px; }
+}
+
+@media (max-width: 370px) {
+  .inline-booking .easy-options { grid-template-columns: 1fr; }
+  .page-hero h1 { font-size: 29px; }
+}
